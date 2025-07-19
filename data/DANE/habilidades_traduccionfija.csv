@@ -1,28 +1,3 @@
-Instrucciones: Abre el archivo habilidades_traduccion.csv que se encuentra en tu carpeta data. Borra todo su contenido y pégale esta lista completa y corregida.skill_en,skill_es
-Active Learning,Aprendizaje Activo
-Active Listening,Escucha Activa
-Analyzing Data or Information,Análisis de Datos o Información
-Arm-Hand Steadiness,Firmeza de Brazo y Mano
-Assisting and Caring for Others,Asistencia y Cuidado a Otros
-Auditory Attention,Atención Auditiva
-Category Flexibility,Flexibilidad de Categorización
-Coaching and Developing Others,Entrenamiento y Desarrollo de Otros
-Communicating with People Outside the Organization,Comunicación con Personas Externas a la Organización
-Communicating with Supervisors, Peers, or Subordinates,Comunicación con Supervisores, Pares o Subordinados
-Complex Problem Solving,Resolución de Problemas Complejos
-Control Precision,Precisión de Control
-Controlling Machines and Processes,Control de Máquinas y Procesos
-Coordinating the Work and Activities of Others,Coordinación del Trabajo y Actividades de Otros
-Coordination,Coordinación
-Critical Thinking,Pensamiento Crítico
-Deductive Reasoning,Razonamiento Deductivo
-Depth Perception,Percepción de Profundidad
-Developing Objectives and Strategies,Desarrollo de Objetivos y Estrategias
-Developing and Building Teams,Desarrollo y Construcción de Equipos
-Documenting/Recording Information,Documentación y Registro de Información
-Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment,Diseño y Especificación de Dispositivos Técnicos
-Dynamic Flexibility,Flexibilidad Dinámica
-Dynamic Strength,Fuerza Dinámica
-Equipment Maintenance,Mantenimiento de Equipos
-Equipment Selection,Selección de Equipos
-Establishing and Maintaining Interpersonal Relationships,Establecimiento y Mantenimiento de Rel
+version https://git-lfs.github.com/spec/v1
+oid sha256:71b7aa03b6f9a496a8b0a678680a103eeb93d4f7b1e8ed84103a3ac5df695705
+size 1840
