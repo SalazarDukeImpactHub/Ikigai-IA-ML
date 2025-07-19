@@ -1,0 +1,15 @@
+src/dane_enriquecido_final_2024.parquet filter=lfs diff=lfs merge=lfs -text
+src/knn_model.pkl filter=lfs diff=lfs merge=lfs -text
+src/mat_full.parquet filter=lfs diff=lfs merge=lfs -text
+src/puente_onet_dane_ia.parquet filter=lfs diff=lfs merge=lfs -text
+knn_model.pkl filter=lfs diff=lfs merge=lfs -text
+data/dane_enriquecido_final_2024.parquet filter=lfs diff=lfs merge=lfs -text
+data/knn_model.pkl filter=lfs diff=lfs merge=lfs -text
+data/mat_full.parquet filter=lfs diff=lfs merge=lfs -text
+data/puente_onet_dane_ia.parquet filter=lfs diff=lfs merge=lfs -text
+src/data/dane_enriquecido_final_2024.parquet filter=lfs diff=lfs merge=lfs -text
+src/data/knn_model.pkl filter=lfs diff=lfs merge=lfs -text
+src/data/mat_full.parquet filter=lfs diff=lfs merge=lfs -text
+src/data/puente_onet_dane_ia.parquet filter=lfs diff=lfs merge=lfs -text
+src/data/survey_results_public.csv filter=lfs diff=lfs merge=lfs -text
+src/data/Technology_Skills.xlsx filter=lfs diff=lfs merge=lfs -text

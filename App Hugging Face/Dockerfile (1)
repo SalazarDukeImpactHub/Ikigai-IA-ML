@@ -1,0 +1,32 @@
+# Paso 1: Usar una imagen oficial de Python como base.
+# La versión '3.9-slim' es ligera, estable y buena para producción.
+FROM python:3.9-slim
+
+# Paso 2: Establecer el directorio de trabajo dentro del contenedor.
+# Todos los comandos siguientes se ejecutarán desde esta carpeta.
+WORKDIR /app
+
+# Paso 3: Actualizar pip, la herramienta para instalar paquetes de Python.
+RUN pip install --upgrade pip
+
+# Paso 4: Copiar solo el archivo de requerimientos primero.
+# Esto es una optimización. Docker guardará en caché este paso si el archivo no cambia,
+# haciendo que las futuras construcciones sean mucho más rápidas.
+COPY ./requirements.txt /app/requirements.txt
+
+# Paso 5: Instalar todas las librerías de Python listadas en requirements.txt.
+# --no-cache-dir ahorra espacio en la imagen final.
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Paso 6: Copiar el resto de los archivos de tu proyecto al contenedor.
+# El primer '.' se refiere a tu carpeta local, y el segundo '.' al WORKDIR (/app) del contenedor.
+# Esto copiará tu carpeta 'src/' y tu carpeta 'data/'.
+COPY . .
+
+# Paso 7: Exponer el puerto que Streamlit usa por defecto (8501).
+# Esto le dice a Hugging Face en qué "puerta" debe escuchar para mostrar tu app.
+EXPOSE 8501
+
+# Paso 8: El comando que se ejecutará para iniciar tu aplicación.
+# ¡CORRECCIÓN IMPORTANTE! Apuntamos a la ruta correcta: src/streamlit_app.py
+CMD ["streamlit", "run", "src/streamlit_app.py", "--server.port=8501", "--server.headless=true"]
